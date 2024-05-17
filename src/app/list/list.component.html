@@ -1,0 +1,24 @@
+<h1>Listado de Convocados Universidad</h1>
+<div class="container">
+    <table class="table">
+        <thead class="tittle__table">
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+            <th>Documento</th>
+          </tr>
+        </thead>
+      
+        <tbody class="body">
+          @for(persona of personas; track $index){
+          <tr>
+            <td>{{ persona.nombre }}</td>
+            <td>{{ persona.edad }}</td>
+            <td>{{ persona.ciudad }}</td>
+            <td>{{ persona.documento }}</td>
+          </tr>
+          }
+        </tbody>
+      </table>
+</div>

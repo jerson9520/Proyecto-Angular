@@ -1,0 +1,26 @@
+.table{
+    background-color: aquamarine;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.tittle__table{
+    border-color: black;
+    color: black;
+}
+
+.body{
+    padding: 10px;
+    border-top: 50px;
+}
+
+td{
+    text-align: center;
+}
