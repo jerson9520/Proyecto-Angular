@@ -1,0 +1,106 @@
+/* General Styles */
+.contacto {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 50px 0; /* Top and bottom padding */
+  }
+  
+  .container {
+    width: 90%; /* Adjust width as needed */
+    max-width: 1000px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Title and Description */
+  .contacto__titulo {
+    text-align: center; /* Center the title text */
+    font-size: 36px; /* Adjust font size as desired */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 20px; /* Add spacing below the title */
+    color: #333; /* Dark gray text color */
+  }
+  
+  .contacto__descripcion {
+    text-align: center; /* Center the description text */
+    font-size: 18px; /* Adjust font size as desired */
+    line-height: 1.5; /* Add some line-height for readability */
+    color: #666; /* Dark gray text color */
+    margin-bottom: 40px; /* Add spacing below the description */
+  }
+  
+  /* Contact Form */
+  .contacto__formulario {
+    background-color: #fff; /* White background for contrast */
+    padding: 30px; /* Add padding around the form */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .contacto__grupo {
+    margin-bottom: 20px; /* Add spacing between form groups */
+  }
+  
+  .contacto__label {
+    display: block; /* Make labels block-level for better spacing */
+    margin-bottom: 5px; /* Add spacing below the label */
+    font-weight: bold; /* Bold for emphasis */
+  }
+  
+  .contacto__input,
+  .contacto__textarea {
+    width: 100%; /* Make inputs and textarea fill the container */
+    padding: 10px; /* Add padding for better usability */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in element width */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change on focus */
+  }
+  
+  .contacto__input:focus,
+  .contacto__textarea:focus {
+    background-color: #f8f8f8; /* Light gray background on focus */
+  }
+  
+  .contacto__textarea {
+    height: 150px; /* Adjust textarea height as needed */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .contacto__boton {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 12px 20px; /* Add padding for better clickability */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable area */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change on hover */
+  }
+  
+  .contacto__boton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Contact Information */
+  .contacto__informacion {
+    text-align: center; /* Center the contact information */
+    margin-top: 40px; /* Add spacing above the information */
+  }
+  
+  .contacto__datos {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .contacto__datos li {
+    margin-bottom: 15px; /* Add spacing between information items */
+  }
+  
+  .contacto__datos li:first-child {
+    margin-top: 0; /* Remove margin for the first item */
+  }
+  
+  /* Responsive Adjustments (Optional) */
+  @media (max-width: 768px) {
+    .contacto__grupo {
+    }
+}

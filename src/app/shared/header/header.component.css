@@ -1,0 +1,38 @@
+.navbar {
+    display: flex; /* Arrange logo and navigation side-by-side */
+    justify-content: space-between; /* Distribute elements evenly horizontally */
+    align-items: center; /* Align content vertically */
+    padding: 10px 20px; /* Add some padding for spacing */
+    background-color: #000000; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .logo {
+    width: 150px; /* Adjust width based on your logo size */
+  }
+  
+  .logo img {
+    width: 100%; /* Ensure image fills the logo container */
+  }
+  
+  .nav__links {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav__links li {
+    display: inline-block; /* Display list items inline for horizontal layout */
+    margin-right: 20px; /* Add spacing between navigation links */
+  }
+  
+  .nav__links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #787676; /* Dark gray text color */
+    font-weight: bold; /* Bold text for emphasis */
+  }
+  
+  .nav__links a:hover { /* Style on hover */
+    color: #ffffff; /* Black text on hover */
+  }
+  

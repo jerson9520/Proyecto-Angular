@@ -1,0 +1,99 @@
+/* General Styles */
+.nosotros {
+    background-color: #f5f5f5; /* Light background color */
+    padding: 50px 0; /* Top and bottom padding */
+  }
+  
+  .container {
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Title and Description */
+  .nosotros__titulo {
+    text-align: center; /* Center the title text */
+    font-size: 32px; /* Adjust font size as desired */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 20px; /* Add spacing below the title */
+  }
+  
+  .nosotros__descripcion {
+    text-align: center; /* Center the description text */
+    font-size: 18px; /* Adjust font size as desired */
+    line-height: 1.5; /* Add some line-height for readability */
+    color: #666; /* Dark gray text color */
+    margin-bottom: 40px; /* Add spacing below the description */
+  }
+  
+  /* Team Section */
+  .nosotros__equipo {
+    text-align: center; /* Center the team section text */
+    margin-bottom: 40px; /* Add spacing below the team section */
+  }
+  
+  .equipo__miembros {
+    display: flex; /* Arrange team members in a row */
+    flex-wrap: wrap; /* Wrap to multiple rows if needed */
+    justify-content: center; /* Center team members horizontally */
+  }
+  
+  .equipo__miembro {
+    flex: 1 0 300px; /* Set a minimum width for each team member card */
+    margin: 20px; /* Add spacing between team members */
+    text-align: center; /* Center content within each card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a softer look */
+  }
+  
+  .equipo__miembro__imagen {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Add spacing below the image */
+  }
+  
+  .equipo__miembro__nombre {
+    font-size: 18px; /* Adjust font size as desired */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 5px; /* Add spacing below the name */
+  }
+  
+  .equipo__miembro__cargo {
+    font-size: 14px; /* Adjust font size as desired */
+    color: #999; /* Lighter gray text color for the position */
+    margin-bottom: 10px; /* Add spacing below the position */
+  }
+  
+  .equipo__miembro__descripcion {
+    font-size: 14px; /* Adjust font size as desired */
+    line-height: 1.5; /* Add some line-height for readability */
+  }
+  
+  /* Values Section */
+  .nosotros__valores {
+    text-align: center; /* Center the values section text */
+    margin-bottom: 40px; /* Add spacing below the values section */
+  }
+  
+  .valores__lista {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .valores__lista li {
+    display: inline-block; /* Display list items inline for a horizontal row */
+    margin: 10px; /* Add spacing between values */
+    padding: 15px 20px; /* Add padding to each value */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Responsive Adjustments (Optional) */
+  @media (max-width: 768px) {
+    .equipo__miembros {
+      flex-direction: column;
+    }
+}
