@@ -4,34 +4,35 @@ import { ImagenesComponent } from './pages/imagenes/imagenes.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { PATH } from './core/enum/path.enum';
 
 export const routes: Routes = [
   {
-    path: 'inicio',
+    path: PATH.HOME,
     title: 'Home',
     children: [
       {
-        path: '',
+        path: PATH.HOME,
         title: 'Home',
         component: InicioComponent,
       },
       {
-        path:'persona',
+        path:PATH.PERSONA,
         title:'Persona',
         component: PersonaComponent,
       },
       {
-        path: 'imagenes',
+        path: PATH.IMAGEN,
         title:'Mis imagenes',
         component: ImagenesComponent,
       },
       {
-        path: 'nosotros',
+        path: PATH.NOSOTROS,
         title: 'Nosotros',
         component: NosotrosComponent,
       },
       {
-        path: 'contacto',
+        path: PATH.CONTACTO,
         title: 'Contacto',
         component: ContactoComponent,
       },

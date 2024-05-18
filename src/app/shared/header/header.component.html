@@ -4,11 +4,26 @@
             <img src="../../../assets/logo.png" alt="logo" width="40px">
         </a>
     </div>
-    <ul class="nav__links">
-        <li><a href="inicio">Inicio</a></li>
-        <li><a href="inicio/nosotros">Nosotros</a></li>
-        <li><a href="inicio/imagenes">Imagenes</a></li>
-        <li><a href="inicio/persona">Servicios</a></li>
-        <li><a href="inicio/contacto">Contacto</a></li>
-    </ul>
+    <nav class="main-menu">
+        <ul class="nav__links">
+            @for (main of mainItems; track $index) {
+                <li [class]="main.classCss">
+                    <i [class]="main.icon"></i> 
+                    <a [routerLink]= "main.path">{{main.title}}</a>
+                </li>
+            @if (main.submenu?.length) {
+                <ul class="submenu">
+                    <li [class]="main.classCss">
+                        <i [class]="main.icon"></i>
+                        <a [routerLink]="main.path">{{main.title}}</a>
+                    </li>
+                </ul> 
+            }    
+
+            }
+   
+        </ul>
+
+    </nav>
+
 </div>

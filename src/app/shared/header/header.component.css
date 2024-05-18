@@ -1,38 +1,71 @@
-.navbar {
-    display: flex; /* Arrange logo and navigation side-by-side */
-    justify-content: space-between; /* Distribute elements evenly horizontally */
-    align-items: center; /* Align content vertically */
-    padding: 10px 20px; /* Add some padding for spacing */
-    background-color: #000000; /* Light gray background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+/* .navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #000000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
   
   .logo {
-    width: 150px; /* Adjust width based on your logo size */
+    width: 150px; 
   }
   
   .logo img {
-    width: 100%; /* Ensure image fills the logo container */
+    width: 100%; 
   }
   
   .nav__links {
-    list-style: none; /* Remove default bullet points */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    color: #787676;
   }
   
   .nav__links li {
-    display: inline-block; /* Display list items inline for horizontal layout */
-    margin-right: 20px; /* Add spacing between navigation links */
+    display: inline-block; 
+    margin-right: 20px; 
   }
   
   .nav__links a {
-    text-decoration: none; /* Remove underline from links */
-    color: #787676; /* Dark gray text color */
-    font-weight: bold; /* Bold text for emphasis */
+    text-decoration: none; 
+    color: #787676; 
+    font-weight: bold; 
   }
   
-  .nav__links a:hover { /* Style on hover */
-    color: #ffffff; /* Black text on hover */
-  }
+  .nav__links a:hover { 
+    color: #ffffff; 
+  } */
   
+.main-menu{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.main-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: #787676;
+}
+.main-menu ul li:hover .submenu {
+  display: block;
+  
+}
+
+.submenu{
+  display: none;
+  position: absolute;
+  background: #fff ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0,1);
+}
+.submenu li {
+  display: none;
+
+}
