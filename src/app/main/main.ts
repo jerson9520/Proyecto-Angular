@@ -5,7 +5,7 @@ export const MainRoute : MainInfo[] = [
     {
         path: PATH.HOME,
         title:'Home',
-        icon:'',
+        icon:'fa-solid fa-house',
         classCss:'',
         submenu:[],
     },
@@ -13,7 +13,7 @@ export const MainRoute : MainInfo[] = [
         path:PATH.NOSOTROS,
         title:'Nosotros',
         icon:'',
-        classCss:'',
+        classCss:'fa-solid fa-users-gear',
         submenu:[],
     },
     {
@@ -24,16 +24,30 @@ export const MainRoute : MainInfo[] = [
         submenu:[],
     },
     {
+        path: PATH.PRODUCTOS,
+        title:'Ver Productos',
+        icon:'',
+        classCss:'',
+        submenu:[],
+    },
+    {
+        path:PATH.USUARIO,
+        title:'Ver Usuarios',
+        icon:'fa-solid fa-image',
+        classCss:'',
+        submenu:[],
+    },
+    {
         path:PATH.IMAGEN,
         title:'Imagen',
-        icon:'',
+        icon:'fa-solid fa-image',
         classCss:'',
         submenu:[],
     },
     {
         path: PATH.CONTACTO,
         title:'Contacto',
-        icon:'',
+        icon:'fa-solid fa-address-book',
         classCss:'',
         submenu:[],
     }

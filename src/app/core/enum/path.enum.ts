@@ -4,5 +4,7 @@ export enum PATH {
     IMAGEN='imagen',
     NOSOTROS='nombre',
     CONTACTO = 'contacto',
-    INICIO='inicio'
+    INICIO='inicio',
+    USUARIO = 'usuario',
+    PRODUCTOS = 'producto'
 }

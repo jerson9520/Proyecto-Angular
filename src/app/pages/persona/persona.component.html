@@ -1,1 +1,11 @@
-<app-list/>
+<h1>Personas</h1>
+<!-- 
+@for(persona of personas; track $index) {
+    <li>{{persona.nombre}}</li>
+    <li>{{persona.email}}</li>
+    <li>{{persona.numeroCelular}}</li>
+    <li>{{persona.tipoDocumento}}</li>
+    <li>{{persona.peso}}</li>
+} -->
+
+<app-tabla [data]="personas" [titulo]="tituloTabla" [columnas]="columnas"/>

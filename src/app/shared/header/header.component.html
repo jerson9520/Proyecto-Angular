@@ -1,4 +1,4 @@
-<div class="navbar">
+<!-- <div class="navbar">
     <div class="logo">
         <a href="#">
             <img src="../../../assets/logo.png" alt="logo" width="40px">
@@ -26,4 +26,46 @@
 
     </nav>
 
-</div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/logo.png" alt="logo" width="30">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+            @for (main of mainItems; track $index) {
+                <li class="nav-item" [class]="main.classCss" >
+                    <i [class]="main.icon"></i> 
+                    <a class="nav-link active" [routerLink]= "main.path">{{main.title}}</a>
+                </li>
+            @if (main.submenu?.length) {
+                <ul class="submenu">
+                    <li class="dropdown-item" [class]="main.classCss">
+                        <i [class]="main.icon"></i>
+                        <a class="nav-link active" [routerLink]="main.path">{{main.title}}</a>
+                    </li>
+                </ul> 
+            }    
+
+            }
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
