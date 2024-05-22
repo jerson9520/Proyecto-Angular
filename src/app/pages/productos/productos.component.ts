@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosInterface } from '../../core/interface/productos.interface';
 import { TablaComponent } from "../../components/tabla/tabla.component";
+import Swal from 'sweetalert2';
 
 @Component({
     selector: 'app-productos',
@@ -13,12 +14,8 @@ export class ProductosComponent implements OnInit{
   
   misProductos: ProductosInterface [] = [];
   titulo: string = 'Lista de Productos'
-  columnas: string[] = [
-    'nombre',
-    'sku',
-    'cantidad',
-    'precio',
-  ];
+  columnas: string [] = [];
+  informacion: any; 
 
   ngOnInit(): void {
     this.misProductos = [
@@ -58,6 +55,27 @@ export class ProductosComponent implements OnInit{
         cantidad: 342,
         precio: 300.000
       },  
-  ]
+  ];
+    this.obtenerColumnas(this.misProductos);
+  }
+
+  obtenerColumnas(productos: ProductosInterface[]){
+    if(productos.length > 0) {
+      this.columnas = Object.keys(productos[0]);
+    }
+  }
+
+  recibirInformacion(data: any) {
+    this.informacion = data;
+    Swal.fire({
+      title: 'Producto',
+      html: `<ul class="list-group">
+              <li class="list-group-item text-start">Nombre: ${data.nombre}</li>
+              <li class="list-group-item text-start">Código: ${data.sku}</li>
+              <li class="list-group-item text-start">Cantidad: ${data.cantidad}</li>
+              <li class="list-group-item text-start">Precio: ${data.precio}</li>
+            </ul>`,
+      icon: 'success',
+    });
   }
 }

@@ -1,5 +1,11 @@
+<h4>Componente Padre</h4>
+
+<span style="color: brown; font-size: 20px;">SKU: {{informacion?.sku}}</span>
+<span style="color: brown; font-size: 20px;">SKU: {{informacion?.nombre}}</span>
+
 <app-tabla 
-    [columnas]="columnas" 
+    [columnas]="columnas"    
     [data]="misProductos" 
-    [titulo]="titulo"     
+    [titulo]="titulo" 
+    (onInformacion)="recibirInformacion($event)"
 />

@@ -1,2 +1,10 @@
 <h1>Lista de Usuarios</h1>
-<app-tabla [data]="usuarios" [titulo]="'Lista de Usuarios'" [columnas]="columnas"/>
+<app-tabla
+  [data]="usuarios"
+  [titulo]="'Lista de Usuarios'"
+  [columnas]="columnas"
+  (onInformacion)="recibirInfoUsuarios($event)"
+  
+/>
+
+

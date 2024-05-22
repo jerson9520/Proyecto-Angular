@@ -1,22 +1,33 @@
-<table class="table table-striped-columns">
+<div class="table-responsive">
+  <table class="table table-striped-columns">
     <thead>
-        <tr>
-            @for (columna of columnas; track $index) {
-            <ng-container>
-                <td>{{columna}}</td>    
-            </ng-container>
+      <tr>
+        @for (columna of columnas; track $index) {
+        <ng-container>
+          <td>{{ formatearNombreDeColumnas(columna) }}</td>
+        </ng-container>
         }
-        </tr>
+        <th>Acciones</th>
+      </tr>
     </thead>
     <tbody>
-        @for (item of data; track $index) {
-            <tr>
-                @for (columna of columnas; track $index) {
-                <ng-container>
-                    <td>{{item[columna] }}</td>
-                </ng-container>
-                }
-            </tr>
-        }
+      @for (item of data; track $index) {
+      <tr>
+        @for (columna of columnas; track $index) {@if(isFecha(item[columna])) {
+        <ng-container>
+          <td>{{ item[columna] | date : "mediumDate" : "UTC" }}</td>
+        </ng-container>
+        } @else {
+        <ng-container>
+          <td>{{ item[columna] }}</td>
+        </ng-container>
+
+        } }
+        <td class="text-center">
+            <button type="button" class="btn btn-info" (click)="enviarInformacion(item)">Info</button>
+        </td>
+      </tr>
+      }
     </tbody>
-</table>
+  </table>
+</div>
